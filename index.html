@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cyberpunk Portfolio showcasing web development and cybersecurity projects.">
+    <meta name="keywords" content="web development, cybersecurity, portfolio, cyberpunk">
+    <meta name="author" content="Your Name">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>Cyber<span>Vision</span></h1>
+        </div>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </div>
+            <ul id="nav-menu" aria-labelledby="menu-toggle">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>"My name is Mukund and I am here to introduce myself"</p>
+        <a href="#projects" class="cta">See My Work</a>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p> As a fresher Looking for Experience For more opportunity and Growth 
+            Enthusiastic and detail-oriented Computer Science graduate with a solid understanding of programming languages including C Language, 
+            C++, JAVA, HTML, CSS, JAVASCRIPT
+             Demonstrated ability to work collaboratively in team environments and deliver high-quality results. Eager to apply technical skills and 
+            knowledge to real-world projects
+             Highly skilled in Ethical hacking  and Certified Ethical Hacker. Adept at identifying system vulnerabilities, firewall evasion. Able to analyze 
+            complex information and facilitate understanding among non-technical team members. Proven ability to develop effective system security 
+            measures and recommend proactive strategies to mitigate risk</p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>Free Notes Web App</h3>
+                <p>A Notes web app there all notes will be update for free</p>
+                <a href="https://prisnotesweb.infinityfreeapp.com/?i=1" class="project-btn">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Cyber Project</h3>
+                <p>Here is a Python program that uses the Caesar Cipher algorithm to encrypt and decrypt text.</p>
+                <a href="https://github.com/aniketjha345/PRODIGY_CS_01.git" class="project-btn">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Cyber Project 2</h3>
+                <p>This script provides a simple image encryption tool that applies a bitwise XOR operation to each pixel for encryption and decryption. The key is an integer between 0 and 255.</p>
+                <a href="https://github.com/aniketjha345/PRODIGY_CS_02.git" class="project-btn">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Cyber Project 3</h3>
+                <p>this a password complexity tool</p>
+                <a href="https://github.com/aniketjha345/PRODIGY_CS_03.git" class="project-btn">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Cyber Project 4</h3>
+                <p>A Notes web app there all notes will be update for free</p>
+                <a href="https://github.com/aniketjha345/PRODIGY_CS_04.git" class="project-btn">View Project</a>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section id="certificates" class="certificates">
+        <h2>Certificates</h2>
+        <div class="cert-grid">
+            <div class="cert-item">
+                <h3>Cybersecurity Certification</h3>
+                <p>Completed an intensive cybersecurity course focused on protecting digital assets.</p>
+                <a href="#" class="cert-btn">View</a>
+            </div>
+            <div class="cert-item">
+                <h3>AI Specialist</h3>
+                <p>Certified AI developer, working with machine learning and data analysis.</p>
+                <a href="#" class="cert-btn">View</a>
+            </div>
+            <!-- Add more certificates as needed -->
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-grid">
+            <div class="blog-item">
+                <h3>The Future of AI</h3>
+                <p>A deep dive into how artificial intelligence is shaping our future.</p>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <div class="blog-item">
+                <h3>Cybersecurity Trends</h3>
+                <p>Exploring the latest trends in cybersecurity and how they affect digital privacy.</p>
+                <a href="#" class="read-btn">Read More</a>
+            </div>
+            <!-- Add more blog posts as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>Let's create something extraordinary together.</p>
+        <form action="#" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Your Message" required aria-required="true"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Prismatic Hat. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
